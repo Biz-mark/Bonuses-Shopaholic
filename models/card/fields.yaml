@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    number:
+        label: 'bizmark.bonusesshopaholic::lang.field.number.label'
+        comment: 'bizmark.bonusesshopaholic::lang.field.number.comment'
+        disabled: true
+
+    bonuses:
+        label: Бонусы
+
+tabs:
+    fields:
+        actions:
+            tab: 'bizmark.bonusesshopaholic::lang.field.actions'
+            type: partial
+            path: $/bizmark/bonusesshopaholic/views/actions.htm

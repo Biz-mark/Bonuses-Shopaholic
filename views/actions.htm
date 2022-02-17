@@ -1,0 +1,30 @@
+<?php if (!empty($value)) : ?>
+    <?php arsort($value); ?>
+    <table class="table">
+        <thead>
+            <tr>
+                <th><?= trans('lovata.toolbox::lang.field.created_at') ?></th>
+                <th><?= trans('bizmark.bonusesshopaholic::lang.table.action') ?></th>
+                <th><?= trans('bizmark.bonusesshopaholic::lang.table.value') ?></th>
+                <th><?= trans('bizmark.bonusesshopaholic::lang.table.comment') ?></th>
+                <th><?= trans('bizmark.bonusesshopaholic::lang.table.is_done') ?></th>
+                <th><?= trans('bizmark.bonusesshopaholic::lang.table.action_at') ?></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($value as $iAction) : ?>
+                <?php $obAction = \BizMark\BonusesShopaholic\Models\Action::find($iAction); ?>
+                <tr>
+                    <td><?= $obAction->created_at->timezone(config('backend.timezone')); ?></td>
+                    <td><?= $obAction->human_type; ?></td>
+                    <td><?= $obAction->value; ?></td>
+                    <td><?= !empty($obAction->description) ? $obAction->description : '-'; ?></td>
+                    <td><?= $obAction->is_done ? trans('bizmark.bonusesshopaholic::lang.table.yes') : trans('bizmark.bonusesshopaholic::lang.table.no') ?></td>
+                    <td><?= !empty($obAction->action_at) ? $obAction->action_at->timezone(config('backend.timezone')) : trans('bizmark.bonusesshopaholic::lang.table.immediately') ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php else : ?>
+    <p class="text-muted text-center"><?= trans('bizmark.bonusesshopaholic::lang.table.no_actions') ?></p>
+<?php endif; ?>

@@ -1,0 +1,22 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    number:
+        label: 'bizmark.bonusesshopaholic::lang.column.number'
+        searchable: true
+        sortable: true
+
+    bonuses:
+        label: 'bizmark.bonusesshopaholic::lang.column.bonuses'
+        searchable: true
+        sortable: true
+
+    created_at:
+        label: 'lovata.toolbox::lang.field.created_at'
+        type: datetime
+
+    updated_at:
+        label: 'lovata.toolbox::lang.field.updated_at'
+        type: timetense

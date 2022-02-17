@@ -1,0 +1,24 @@
+cards:
+    label: Бонусные карты
+    manage:
+        form: $/bizmark/bonusesshopaholic/models/card/fields.yaml
+        list: $/bizmark/bonusesshopaholic/models/card/columns.yaml
+        showSearch: true
+        showSorting: true
+        showCheckboxes: true
+        recordsPerPage: 20
+        defaultSort:
+            column: id
+            direction: desc
+    view:
+        list: $/bizmark/bonusesshopaholic/models/card/columns.yaml
+        toolbarButtons: create|delete
+        showSearch: true
+        showSorting: true
+        recordsPerPage: 10
+        defaultSort:
+            column: id
+            direction: desc
+    customMessages:
+        buttonCreate: Создать карту
+        buttonDelete: Удалить карту
