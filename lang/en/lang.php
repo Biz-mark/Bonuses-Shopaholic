@@ -36,6 +36,10 @@ return [
         'type_1' => 'Top up of balance',
         'type_2' => 'Other'
     ],
+    'button' => [
+        'create' => 'Create card',
+        'delete' => 'Delete card',
+    ],
     'promo-mechanism' => 'Discount on the total amount of the order using user bonuses',
     'promo-mechanism_description' => 'Discount on the <b>total amount</b> of the order in the amount of the specified bonuses.',
 ];

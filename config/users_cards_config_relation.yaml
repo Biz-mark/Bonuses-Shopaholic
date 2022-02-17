@@ -1,5 +1,5 @@
 cards:
-    label: Бонусные карты
+    label: 'bizmark.bonusesshopaholic::lang.tab.cards',
     manage:
         form: $/bizmark/bonusesshopaholic/models/card/fields.yaml
         list: $/bizmark/bonusesshopaholic/models/card/columns.yaml
@@ -20,5 +20,5 @@ cards:
             column: id
             direction: desc
     customMessages:
-        buttonCreate: Создать карту
-        buttonDelete: Удалить карту
+        buttonCreate: 'bizmark.bonusesshopaholic::lang.button.create',
+        buttonDelete: 'bizmark.bonusesshopaholic::lang.button.delete',
