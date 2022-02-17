@@ -1,19 +1,15 @@
 <?php namespace BizMark\BonusesShopaholic;
 
 use Backend, Event;
-use System\Classes\PluginBase;
-
 use BizMark\BonusesShopaholic\Classes\Event\Order\OrderModelHandler;
-
+use BizMark\BonusesShopaholic\Classes\Event\PromoMechanism\PromoMechanismModelHandler;
+use System\Classes\PluginBase;
 use BizMark\BonusesShopaholic\Classes\Event\User\ExtendUserFieldsHandler;
 use BizMark\BonusesShopaholic\Classes\Event\User\UserModelHandler;
 use BizMark\BonusesShopaholic\Classes\Event\User\UsersControllerHandler;
-
 use BizMark\BonusesShopaholic\Classes\Event\Offer\ExtendOfferFieldsHandler;
 use BizMark\BonusesShopaholic\Classes\Event\Offer\OfferModelHandler;
-
 use BizMark\BonusesShopaholic\Classes\Event\PromoMechanism\BonusesDiscountTotalPrice;
-use BizMark\BonusesShopaholic\Classes\Event\PromoMechanism\PromoMechanismModelHandler;
 
 /**
  * BonusesShopaholic Plugin Information File

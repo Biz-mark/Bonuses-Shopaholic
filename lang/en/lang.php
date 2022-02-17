@@ -3,7 +3,7 @@
 return [
     'plugin' => [
         'name' => 'Bonuses',
-        'description' => 'Bonuses system for Shopaholic '
+        'description' => 'Bonuses system for Shopaholic'
     ],
     'column' => [
         'number' => 'Card number',
@@ -30,6 +30,11 @@ return [
         'no' => 'No',
         'immediately' => 'Immediately',
         'no_actions' => 'There have been no actions on the bonus card yet'
+    ],
+    'action' => [
+        'type_0' => 'Balance withdrawal',
+        'type_1' => 'Top up of balance',
+        'type_2' => 'Other'
     ],
     'promo-mechanism' => 'Discount on the total amount of the order using user bonuses',
     'promo-mechanism_description' => 'Discount on the <b>total amount</b> of the order in the amount of the specified bonuses.',

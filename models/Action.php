@@ -29,9 +29,9 @@ class Action extends Model
     use \October\Rain\Database\Traits\Validation;
 
     const TYPE = [
-        0 => 'Списание баланса',
-        1 => 'Пополнение баланса',
-        2 => 'Иное'
+        0 => 'bizmark.bonusesshopaholic::lang.action.type_0',
+        1 => 'bizmark.bonusesshopaholic::lang.action.type_1',
+        2 => 'bizmark.bonusesshopaholic::lang.action.type_2'
     ];
 
     /**
