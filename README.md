@@ -1,12 +1,13 @@
 # Bonuses-Shopaholic
 
-This plugin allows your customers to have bonus cards with balance on it. You can specify which offer.
+This plugin allows your customers to have bonus cards and use them as discount to orders. 
 
 ## Features
 
 - Unlimited bonus cards per user
+- You can set bonus value of each offer at administration panel!
 - Actions log of each card, you can show in personal user dashboard history of card withdrawals and top ups!
-- Flexible promo-mechanism, that can be tweaked as any other promo-mechanism
+- Flexible promo-mechanism, that can be tweaked as any other promo-mechanism!
 - Easy to use, just add one parameter to request and bonuses will apply automatically!
 
 ## Installation
